@@ -1,0 +1,38 @@
+<div class="container">
+
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+
+                Se connecter
+            </div>
+
+            <div class="panel-body">
+                <form name="login" ng-submit="log.login()" novalidate>
+                    <div class="form-group">
+                        <label> Adresse courriel*</label>
+                        <ng-form name="loginEmail">
+                            <input type="email" name="email" class="form-control" ng-model="log.login.user.email" placeholder="Votre adresse courriel" ng-required="true">
+                        </ng-form>
+                    </div>
+                    <p class="formValidationError" ng-show="loginEmail.email.$invalid && loginEmail.email.$touched">Vous devez entrer votre courriel</p>
+
+                    <div class="form-group">
+                        <label>Mot de passe*</label>
+                        <ng-form name="loginPwd">
+                            <input type="password" name="pwd" class="form-control" ng-model="log.login.user.pwd" placeholder="Votre mot de passe" ng-required="true">
+                        </ng-form>
+                    </div>
+
+                    <p class="formValidationError" ng-show="loginPwd.pwd.$invalid && loginPwd.pwd.$touched">Vous devez entrer votre mot de passe</p>
+
+                    <button ng-disabled=" loginEmail.email.$invalid || loginPwd.pwd.$invalid" type="submit" class="btn btn-primary">Soumettre</button>
+                </form>
+                <p class="lienIncr">Vous n'avez pas de compte?<a ui-sref="register"> Créer un ici</a></p> 
+
+            </div>
+
+        </div>
+    </div>
+
+</div>

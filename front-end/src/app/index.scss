@@ -1,0 +1,109 @@
+/**
+*  If you want to override some bootstrap variables, you have to change values here.
+*  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+*/
+
+$navbar-inverse-link-color: #5AADBB;
+$icon-font-path: "../../bootstrap-sass/assets/fonts/bootstrap/";
+
+/**
+*  Do not remove the comments below. It's the markers used by wiredep to inject
+*  sass dependencies when defined in the bower.json of your dependencies
+*/
+
+// bower:scss
+// endbower
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.thumbnail {
+    height: 200px;
+    img.pull-right {
+        width: 50px;
+    }
+}
+
+.leftSidebar {
+    color: #f2f2f2;
+    background-color: #44aa44;
+    padding: 10px;
+}
+
+.rightSidebar {
+    color: #000;
+    border: dotted 4px #7BF67B;
+}
+
+body {
+    font-size: 16px;
+}
+
+.articleInfo {
+    margin: 10px;
+    text-align: center;
+}
+
+
+.articleInfo h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.articleInfo h2 {
+    font-size: 20px;
+}
+
+.articleInfo li {
+    list-style: none;
+}
+
+
+/* navContainer style  */
+
+.navContainer {
+    width: 100%;
+    background-color: black;
+}
+
+.textarea {
+    resize: none;
+}
+
+.formValidationError {
+    color: #ef1414;
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid #ef1414;
+}
+
+input.ng-valid.ng-touched {
+    border: 1px solid #7BF67B;
+}
+
+.formMessage {
+    padding-top: 10px;
+}
+
+.lienIncr {
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.tdHight {
+   
+    
+}
+
+
+/**
+*  Do not remove the comments below. It's the markers used by gulp-inject to inject
+*  all your sass files automatically
+*/
+
+// injector
+// endinjector

@@ -1,0 +1,68 @@
+<div class="container">
+
+	
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+
+                S'enregistrer
+            </div>
+
+            <div class="panel-body">
+                <form name="register" novalidate ng-submit="regis.register()">
+                    <div class="form-group">
+                        <label>Prénom*</label>
+                        <ng-form name="fisrtNameField">
+                            <input type="text" name="firstName" class="form-control" ng-model="regis.user.firstName" placeholder="Votre prénom" ng-required="true">
+                        </ng-form>
+                    </div>
+                    <p class="formValidationError" ng-show="fisrtNameField.firstName.$invalid && fisrtNameField.firstName.$touched">Vous devez entrer votre prénom</p>
+
+                    <div class="form-group">
+                        <label>Nom*</label>
+                        <ng-form name="nameField">
+                            <input type="text" name="name" class="form-control" ng-model="regis.user.name" placeholder="Votre nom" ng-required="true">
+                        </ng-form>
+                    </div>
+                    <p class="formValidationError" ng-show="nameField.name.$invalid && nameField.name.$touched">Vous devez entrer votre nom</p>
+
+                    <div class="form-group">
+                        <label>Votre courriel*</label>
+                        <ng-form name="emailField">
+                            <input type="email" name="email" class="form-control" ng-model="regis.user.email" placeholder="Votre courriel" ng-required="true">
+                        </ng-form>
+                    </div>
+                    <p class="formValidationError" ng-show="emailField.email.$invalid &&emailField.email.$touched">Vous devez entrer un courriel valide</p>
+
+                    <div class="form-group">
+                        <label>Mot de passe*</label>
+                        <ng-form name="pwdField">
+                            <input type="password" class="form-control" name="pwd" ng-model="regis.user.pwd" placeholder="Votre mot de passe" ng-required="true" ng-minlength="6">
+                        </ng-form>
+                    </div>
+                    <p class="formValidationError" ng-show="pwdField.pwd.$invalid &&pwdField.pwd.$touched">Vous devez entrer un mot de passe d'au moins 6 caractères</p>
+                    <div class="form-group">
+                        <label>Confirmer votre mot de passe*</label>
+                        <input type="password" class="form-control" compare-password="regis.user.pwd" name="confirmPwd" ng-model="confirmPwd" placeholder="Confirmer votre mot de passe" ng-required="true">
+                    </div>
+
+                    <p class="formValidationError" ng-show="register.confirmPwd.$dirty && register.confirmPwd.$invalid" ng-required="true">Les mots de passe ne correspondent pas</p>
+
+                    <button ng-disabled="fisrtNameField.firstName.$invalid || nameField.name.$invalid || emailField.email.$invalid || pwdField.pwd.$invalid || register.confirmPwd.$invalid" type="submit" class="btn btn-primary">S'enregistrer</button>
+
+                    <p class="formMessage" ng-show="regis.message">{{regis.message}}</p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+</div>

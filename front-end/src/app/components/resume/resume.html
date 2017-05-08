@@ -1,0 +1,12 @@
+<div class="articleInfo">
+
+    <h1>Liste des articles </h1>
+
+    <ul>
+        <li ng-repeat="item in main.articleIdList" class="list-group-item">
+            <a title="Id des articles à annoter" ui-sref="article({item})">
+                     {{ item}}</a>
+        </li>
+    </ul>
+
+</div>

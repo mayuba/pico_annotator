@@ -1,0 +1,28 @@
+{ "article": [
+  {
+    "Id":"27446929",
+    "title":"A New Method for the Discovery of Significant Molecular Signatures from Omics Data",
+    "resume":"High-throughput technologies such as transcriptomics, proteomics, and metabolomics show great promise for the discovery of biomarkers for diagnosis and prognosis. Selection of the most promising candidates between the initial untargeted step and the subsequent validation phases is critical within the pipeline leading to clinical tests. Several statistical and data mining methods have been described for feature selection: in particular, wrapper approaches iteratively assess the performance of the classifier on distinct subsets of variables. Current wrappers, however, do not estimate the significance of the selected features. We therefore developed a new methodology to find the smallest feature subset which significantly contributes to the model performance, by using a combination of resampling, ranking of variable importance, significance assessment by permutation of the feature values in the test subsets, and half-interval search. We wrapped our biosigner algorithm around three reference binary classifiers (Partial Least Squares-Discriminant Analysis, Random Forest, and Support Vector Machines) which have been shown to achieve specific performances depending on the structure of the dataset. By using three real biological and clinical metabolomics and transcriptomics datasets (containing up to 7000 features), complementary signatures were obtained in a few minutes, generally providing higher prediction accuracies than the initial full model. Comparison with alternative feature selection approaches further indicated that our method provides signatures of restricted size and high stability. Finally, by using our methodology to seek metabolites discriminating type 1 from type 2 diabetic patients, several features were selected, including a fragment from the taurochenodeoxycholic bile acid. Our methodology, implemented in the biosigner R/Bioconductor package and Galaxy/Workflow4metabolomics module, should be of interest for both experimenters and statisticians to identify robust molecular signatures from large omics datasets in the process of developing new diagnostics."
+
+  },
+  {
+    "Id":"27354908",
+    "title":"Antidepressive, anxiolytic, and antiaddictive effects of ayahuasca, psilocybin and lysergic acid diethylamide (LSD)",
+    "resume":"To date, pharmacological treatments for mood and anxiety disorders and for drug dependence show limited efficacy, leaving a large number of patients suffering severe and persistent symptoms. Preliminary studies in animals and humans suggest that ayahuasca, psilocybin and lysergic acid diethylamide (LSD) may have antidepressive, anxiolytic, and antiaddictive properties. Thus, we conducted a systematic review of clinical trials published from 1990 until 2015, assessing these therapeutic properties. Electronic searches were performed using the PubMed, LILACS, and SciELO databases. Only clinical trials published in peer-reviewed journals were included. Of these, 151 studies were identified, of which six met the established criteria. Reviewed studies suggest beneficial effects for treatment-resistant depression, anxiety and depression associated with life-threatening diseases, and tobacco and alcohol dependence. All drugs were well tolerated. In conclusion, ayahuasca, psilocybin and LSD may be useful pharmacological tools for the treatment of drug dependence, and anxiety and mood disorders, especially in treatment-resistant patients. These drugs may also be useful pharmacological tools to understand psychiatric disorders and to develop new therapeutic agents. However, all studies reviewed had small sample sizes, and half of them were open-label, proof-of-concept studies. Randomized, double-blind, placebo-controlled studies with more patients are needed to replicate these preliminary findings."
+  },
+
+  {
+    "Id":"26897901",
+    "title":"UCSF Protocol for Caries Arrest Using Silver Diamine Fluoride: Rationale, Indications and Consent.",
+    "resume":"The Food and Drug Administration recently cleared silver diamine fluoride for reducing tooth sensitivity. Clinical trials document arrest and prevention of dental caries by silver diamine fluoride. This off-label use is now permissible and appropriate under U.S. law. A CDT code was approved for caries arresting medicaments for 2016 to facilitate documentation and billing. We present a systematic review, clinical indications, clinical protocol and consent procedure to guide application for caries arrest treatment."
+  },
+
+  {
+    "Id":"27790252",
+    "title":"Antibacterial Efficacy of Calcium Hydroxide and Chlorhexidine Mixture for Treatment of Teeth with Primary Endodontic Lesions: A Randomized Clinical Trial.",
+    "resume":"In this randomized clinical trial, single-rooted necrotic teeth were divided into two groups. Root canal was irrigated with 2 mL of 6% NaOCl in one group, and a mixture of 0.2% CHX and CH powder as an intracanal medicament for two weeks, in the other group. Root canal samples were obtained before and after the intervention and number of colony forming units (CFUs) was counted in each phase."
+  }
+
+
+]
+}

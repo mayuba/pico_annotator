@@ -1,0 +1,38 @@
+<div class="container">
+
+
+
+    <div class="jumbotron text-center">
+        <h1>Pico Annotator</h1>
+        <h2>Annoter en un clic les éléments PICO</h2>
+
+    </div>
+
+    <div class="row">
+
+
+        <div class="col-md-9">
+
+            <h2>  Liste des phrases annotées</h2>
+
+            <ul class="group-list" ng-model="main.articleIdList">
+
+                <li ng-repeat="text in main.listAnnotatedText" class="list-group-item">
+                    {{text.text}} | {{text.articleId}}| population: {{text.Population}} | intervention: {{text.Intervention}} | Comparison: {{text.Comparison}} | Outcome: {{text.Outcome}} | Background: {{text.Background}} par: <strong>{{text.user.firstName}} {{text.user.name}}</strong>
+
+                </li>
+
+
+            </ul>
+
+
+
+        </div>
+
+        <div class="col-md-3">
+             <data-show-resume> </data-show-resume>
+
+        </div>
+
+
+    </div>

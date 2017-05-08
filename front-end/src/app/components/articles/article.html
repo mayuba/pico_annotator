@@ -1,0 +1,92 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-9 panel">
+            <div class="panel-default">
+                <div class="panel-heading">
+                    <!--         debut tab            -->
+                    <h3 >Sentence | WordToken | LookupWindowAnnotation | ProcedureMention</h3>
+                    <!-- Fin             -->
+                    
+                    <h3 ng-repeat="id in art.articleIdList">{{id.title}} </h3></div>
+
+
+                <div class="panel-body">
+                    <article>
+                        <textarea name="resumeText" class=" form-control custom-control textarea" rows="16" ng-repeat="resume in art.articleIdList"> {{resume.resume}} </textarea>
+
+                    </article>
+
+
+                    <form name="picoCatForm">
+
+                        <div class="form-group">
+                            <ng-form name="selectedTextField">
+                                <input type="text" name="selectedText" require class="form-control input-lg" style="margin:20px 0 20px 0" id="selectTxt" placeholder="Texte sélectionné:" ng-model="art.annotData.text" ng-get-selection="art.selection" ng-required="true">{{selection}}
+                            </ng-form>
+                        </div>
+
+                        <p class="formValidationError" ng-show="selectedTextField.selectedText.$invalid && selectedTextField.selectedText.$touched">Vous devez selectionner un texte</p>
+
+                        <div class="form-inline">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" id="population" ng-model="art.annotData.population"> Population</label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" id="intervention" ng-model="art.annotData.intervention"> Intervention</label>
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" id="comparison" ng-model="art.annotData.comparison"> Comparison</label>
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" id="outcome" ng-model="art.annotData.outcome"> Outcome</label>
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" id="background" ng-model="art.annotData.background"> Background</label>
+                            </div>
+
+                        </div>
+
+
+                        <div ng-repeat="id in art.articleIdList">
+
+                            <input type="hidden" require id="articleId" ng-model="art.annotData.Id" ng-init="art.annotData.Id = id.Id">
+                        </div>
+
+                        <button type="submit" ng-disabled="selectedTextField.selectedText.$invalid" class="btn btn-primary" style="margin-top:20px" ng-click="art.postAnnotation()">Sauvegarder</button>
+
+                    </form>
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3 panel">
+
+
+
+
+
+            
+
+        </div>
+
+
+
+    </div>
+</div>
