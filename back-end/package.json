@@ -1,0 +1,24 @@
+{
+  "name": "pico-annotator-back-end",
+  "version": "1.0.0",
+  "description": "Application pour annoter des résumés de la médécine factuelle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Annotation",
+    "PICO",
+    "evidence-medicine-base"
+  ],
+  "author": "Fredy D.Moko",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "jwt-simple": "^0.5.1",
+    "moment": "^2.17.1",
+    "mongoose": "^4.7.1"
+  }
+}
